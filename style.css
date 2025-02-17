@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-
+  box-sizing: border-box;
   font-family: Arial, sans-serif;
 }
 
@@ -11,9 +11,11 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  transition: 0.4s;
 }
 
 .container {
@@ -22,7 +24,7 @@ body {
   background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
-  padding: 20px;
+  padding: 20px 20px 10px 20px;
   border: 2px solid yellow;
   box-sizing: border-box;
   text-align: center;
@@ -32,10 +34,10 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
   width: 150px;
-  border-radius: 20%;
+  border-radius: 100%;
   cursor: pointer;
   height: 130px;
-  box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 .descricao {
@@ -61,13 +63,15 @@ body {
 
 .mudarModo {
   padding: 10px 20px;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-right: 635px;
   font-size: 14px;
-  border: none;
+  border: 2px solid rgb(160, 160, 160);
   border-radius: 5px;
   background-color: rgb(171, 187, 82);
   color: white;
   cursor: pointer;
+  transition: background-color 0.5s ease;
 }
 
 .mudarModo:hover {
@@ -75,19 +79,19 @@ body {
 }
 
 a {
+  font-size: 0.8rem;
   text-decoration: none;
   color: rgb(102, 204, 255);
 }
 
 footer {
-  margin-top: 30px;
+  margin-top: 20px;
 }
-
-
 
 .modoEscuro {
   background-color: rgb(51, 51, 51);
   color: white;
+  transition: 0.4s;
 }
 
 .modoEscuro .container {
@@ -101,6 +105,7 @@ footer {
 
 .modoEscuro .mudarModo {
   background-color: rgb(85, 85, 85);
+  margin-right: 611px;
 }
 
 .modoEscuro .mudarModo:hover {
