@@ -7,7 +7,7 @@
 
 body {
   background-color: #f0f0f0;
-  color: #333;
+  color: white;
   margin: 0;
   padding: 0;
   display: flex;
@@ -19,25 +19,34 @@ body {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 500px;
   width: 100%;
-  background-color: #ffffff;
+  height: 320px;
+  background-color: #2c384b;
   border-radius: 10px;
   box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2);
-  padding: 20px 20px 10px 20px;
-  border: 2px solid yellow;
+  padding: 20px 20px 0 20px;
+  border: 2px solid rgb(117, 117, 117);
   box-sizing: border-box;
   text-align: center;
 }
 
+.txtPerfil {
+  max-width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  background-color: #2c384b;
+}
+
 .fotoPerfil {
   margin-top: 20px;
-  margin-bottom: 20px;
-  width: 150px;
+  margin-bottom: 10px;
+  width: 100px;
   border-radius: 100%;
   cursor: pointer;
-  height: 130px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  height: 100px;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.3);
 }
 
 .descricao {
@@ -53,29 +62,35 @@ body {
 }
 
 .interesse li {
-  color: rgb(163, 180, 102);
+  color: rgb(172, 208, 211);
   font-weight: 600;
+  margin-top: 20px;
   background-color: none;
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 14px;
 }
 
+h2 {
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
 .mudarModo {
   padding: 10px 20px;
   margin-top: 10px;
-  margin-right: 635px;
+  margin-right: 335px;
   font-size: 14px;
-  border: 2px solid rgb(160, 160, 160);
+  border: 2px solid rgb(117, 117, 117);
   border-radius: 5px;
-  background-color: rgb(171, 187, 82);
+  background-color: #2c384b;
   color: white;
   cursor: pointer;
   transition: background-color 0.5s ease;
 }
 
 .mudarModo:hover {
-  background-color: rgb(133, 141, 88);
+  background-color: #4e6994;
 }
 
 a {
@@ -85,13 +100,23 @@ a {
 }
 
 footer {
-  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  background-color: #2c384b;
+  margin-top: 400px;
 }
 
 .modoEscuro {
   background-color: rgb(51, 51, 51);
   color: white;
   transition: 0.4s;
+}
+
+.modoEscuro .txtPerfil {
+  background-color: rgb(68, 68, 68);
 }
 
 .modoEscuro .container {
@@ -105,25 +130,35 @@ footer {
 
 .modoEscuro .mudarModo {
   background-color: rgb(85, 85, 85);
-  margin-right: 611px;
+  border: 2px solid white;
+  margin-right: 311px;
 }
 
 .modoEscuro .mudarModo:hover {
   background-color: rgb(119, 119, 119);
 }
 
+.modoEscuro footer {
+  background-color: #cacaca7a;
+}
+
 @media (max-width: 294px) {
+
+  .txtPerfil{
+    margin-top: 0;
+  }
+
   .fotoPerfil {
     width: 70px;
     height: 70px;
   }
 
   h1 {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   h2 {
-    font-size: 18px;
+    font-size: 12px;
   }
 
   .descricao {
@@ -131,17 +166,26 @@ footer {
   }
 
   .interesse li {
-    font-size: 8px;
+    font-size: 12px;
     font-weight: 750;
   }
 
   .mudarModo {
     font-size: 8px;
     font-weight: 750;
+    margin-right: 0;
+  }
+
+  .modoEscuro .mudarModo {
+    margin-right: 0px;
   }
 
   a {
     font-size: 12px;
     font-weight: 700;
+  }
+
+  footer{
+    margin-top: 50px;
   }
 }
