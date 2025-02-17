@@ -132,6 +132,7 @@ footer {
   background-color: rgb(85, 85, 85);
   border: 2px solid white;
   margin-right: 311px;
+  transition: 0.8s;
 }
 
 .modoEscuro .mudarModo:hover {
